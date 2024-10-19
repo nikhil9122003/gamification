@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Gamification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mental Health Gamification</h1>
+            <p>Complete tasks to earn points and enhance your mental wellness.</p>
+        </header>
+
+        <div class="tasks-section">
+            <h2>Tasks</h2>
+            <div class="tasks">
+                <label><input type="checkbox" id="task1" class="task-checkbox"> Task 1: Morning Meditation (10 Points)</label>
+                <label><input type="checkbox" id="task2" class="task-checkbox"> Task 2: Daily Exercise (15 Points)</label>
+                <label><input type="checkbox" id="task3" class="task-checkbox"> Task 3: Journaling (20 Points)</label>
+                <label><input type="checkbox" id="task4" class="task-checkbox"> Task 4: Social Interaction (5 Points)</label>
+                <label><input type="checkbox" id="task5" class="task-checkbox"> Task 5: Reading 20 Minutes (15 Points)</label>
+                <label><input type="checkbox" id="task6" class="task-checkbox"> Task 6: Healthy Meal (10 Points)</label>
+                <label><input type="checkbox" id="task7" class="task-checkbox"> Task 7: Gratitude Practice (25 Points)</label>
+                <label><input type="checkbox" id="task8" class="task-checkbox"> Task 8: Yoga Session (20 Points)</label>
+                <label><input type="checkbox" id="task9" class="task-checkbox"> Task 9: Digital Detox (30 Points)</label>
+                <label><input type="checkbox" id="task10" class="task-checkbox"> Task 10: Random Act of Kindness (25 Points)</label>
+                <label><input type="checkbox" id="task11" class="task-checkbox"> Task 11: Nature Walk (15 Points)</label>
+                <label><input type="checkbox" id="task12" class="task-checkbox"> Task 12: Creative Hobby (20 Points)</label>
+                <label><input type="checkbox" id="task13" class="task-checkbox"> Task 13: Sleep at least 7 hours (20 Points)</label>
+                <label><input type="checkbox" id="task14" class="task-checkbox"> Task 14: Practice Mindfulness (15 Points)</label>
+                <label><input type="checkbox" id="task15" class="task-checkbox"> Task 15: Connect with a Friend (10 Points)</label>
+                <label><input type="checkbox" id="task16" class="task-checkbox"> Task 16: Attend a Workshop (30 Points)</label>
+                <label><input type="checkbox" id="task17" class="task-checkbox"> Task 17: Play a Game (15 Points)</label>
+                <label><input type="checkbox" id="task18" class="task-checkbox"> Task 18: Watch a Motivational Video (10 Points)</label>
+                <label><input type="checkbox" id="task19" class="task-checkbox"> Task 19: Organize Your Space (20 Points)</label>
+                <label><input type="checkbox" id="task20" class="task-checkbox"> Task 20: Create a Vision Board (25 Points)</label>
+            </div>
+        </div>
+
+        <div class="points-section">
+            <h2>Your Progress</h2>
+            <div class="progress-bar">
+                <div id="points-progress"></div>
+            </div>
+            <p><strong>Points:</strong> <span id="points">0</span></p>
+            <p><strong>Streak:</strong> <span id="streak">0</span> <span id="streak-icon">🔥</span></p>
+            <p id="rewards" class="rewards-section"></p>
+            <p><strong>Badges:</strong> <span id="badges"></span></p>
+        </div>
+
+        <footer>
+            <p>Keep up the good work! Each task helps improve your mental health.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

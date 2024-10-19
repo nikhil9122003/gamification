@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f8ff, #add8e6);
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #005b96;
+}
+
+.tasks-section, .points-section {
+    margin-bottom: 20px;
+}
+
+.tasks label {
+    display: block;
+    margin: 10px 0;
+    background: #005b96;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tasks label:hover {
+    background-color: #007acc;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+#points-progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #4caf50, #81c784);
+    transition: width 0.5s ease;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 30px;
+}
+
+#streak-icon {
+    color: #ff5722;
+    transition: transform 0.5s;
+}
+
+#badges .badge {
+    background: gold;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+    color: black;
+    font-weight: bold;
+    animation: badgePop 0.5s;
+}
+
+@keyframes badgePop {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .tasks label {
+        font-size: 0.9rem;
+    }
+}
